@@ -1,0 +1,4 @@
+python-dotenv
+aiogram==2.5
+openai==0.28.1
+huggingface_hub == 0.22.2
