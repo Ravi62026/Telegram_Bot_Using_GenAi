@@ -15,7 +15,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Connect with huggingface hub
 
-huggingface_hub.api_key = HUGGINGFACE_API_KEY
+# huggingface_hub.api_key = HUGGINGFACE_API_KEY
 
 openai.api_key = OPENAI_API_KEY
 
@@ -96,7 +96,8 @@ async def main_bot(message: types.Message):
     reference.response = response['choices'][0]['message']['content']
     print(f">>> chatGPT: \n\t{reference.response}")
     await bot.send_message(chat_id = message.chat.id, text = reference.response)
-    
+
+# using hugginface_hub
 
 # @dispatcher.message_handler()
 # async def process_message(message, reference, bot):
